@@ -10,14 +10,20 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    place-content: center;
+    grid-template: " . nav grid-container . ";
+    align-content: center;
+}
+#nav{
+    grid-area: nav;
+    display: grid;
 }
 #container{
+    grid-area: grid-container;
     display: grid;
     width: var(--width);
     height: var(--width);
     margin: 0 auto;
-    border: 10px solid rgb(160, 109, 109);
+    border: 10px solid rgb(65, 65, 65);
 }
 .creategrid{
     place-self: center;

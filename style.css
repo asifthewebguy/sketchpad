@@ -15,8 +15,10 @@ body{
 }
 #nav{
     grid-area: nav;
-    display: grid;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 #container{
     grid-area: grid-container;
     display: grid;

@@ -1,0 +1,32 @@
+:root{
+    --width: 90vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+#container{
+    display: grid;
+    width: var(--width);
+    height: var(--width);
+    margin: 0 auto;
+    border: 10px solid rgb(160, 109, 109);
+}
+.creategrid{
+    place-self: center;
+}
+.gride{
+    min-width:calc(var(--width) / 100);
+    aspect-ratio: 1/1;
+    transition: ease-out 1s;
+}
+.gride:hover{
+    background-color: #000;
+}
